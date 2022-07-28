@@ -1,0 +1,62 @@
+.fairclass{
+    margin:auto;
+    background-color: rgb(247, 244, 91);
+}
+
+.autowidth{
+    width: auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.resultsearch{
+    margin:auto;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.left{
+    text-align:left;
+    margin-left: 30px;
+}
+
+.resulttable{
+    /*! border-style: solid; */
+    /*! border: 1px; */
+    margin-top:25px;
+    margin-left:30px;
+}
+
+.center{
+    text-align: center;
+}
+
+.searchfield{
+    padding-bottom: 5px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}

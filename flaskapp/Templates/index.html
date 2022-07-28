@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>LAM FAIR SEARCH</title>
+</head>
+
+<body>
+    <div class="fairclass">
+        <h1 class="center">FAIR SEARCH</h1>
+        <form name="fairsearch" class="center" 
+        onsubmit="javascript: window.open('http://localhost:8080/fair/' + document.getElementById('text').value.trim())">
+            Part Number: <input type="text" name="partnum" id="text" class="searchfield">
+            <input type="submit" class="searchfield" value="Search!!">
+        </form>
+    </div>
+
+</body>
+
+</html>

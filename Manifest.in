@@ -1,0 +1,3 @@
+graft flaskapp/static
+graft flaskapp/templates
+global-exclude *.pyc

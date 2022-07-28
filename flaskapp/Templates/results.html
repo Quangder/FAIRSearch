@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>LAM FAIR SEARCH</title>
+</head>
+
+<body>
+    <div class="resultsearch">
+        <h1 class="left">FAIR SEARCH</h1>
+        <form name="fairsearch" class="left"
+        onsubmit="javascript: window.open('http://localhost:8080/fair/' + document.getElementById('text').value.trim())">
+            Part Number: <input type="text" name="partnum" id="text" class="searchfield" >
+            <input type="submit" class="searchfield" value="Search">
+        </form>
+    </div>
+
+    <div class="resulttable">
+        <table>
+            <tr>
+                <th class="wideaf">Link</th>
+                <th>Copy</th>
+            </tr>
+            {% for r in pathstrings %}
+            <tr>
+                <td>{{ r }}</td>
+                <td>COPY</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+
+</body>
+
+</html>
