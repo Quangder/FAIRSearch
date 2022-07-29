@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+    function copyFunc(tdId) {
+        /* Get the text field */
+        var copyText = document.getElementById(tdId);
+
+        /* Select the text field */
+        
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.innerText);
+
+        /* Alert the copied text */
+        alert("Copied the text: " + copyText.value);
+    }
+</script>
 
 <head>
     <meta charset="UTF-8">
@@ -25,8 +40,8 @@
             </tr>
             {% for r in pathstrings %}
             <tr>
-                <td id="{{ loop.index }}">{{ r }}</td>
-                <td><button>COPY</button></td>
+                <td id="data_{{ loop.index }}">{{ r }}</td>
+                <td><button onclick='copyFunc("data_{{ loop.index }}")'>COPY!</button></td>
             </tr>
             {% endfor %}
 

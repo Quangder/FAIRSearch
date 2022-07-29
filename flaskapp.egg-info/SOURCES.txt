@@ -7,5 +7,6 @@ flaskapp.egg-info/dependency_links.txt
 flaskapp.egg-info/not-zip-safe
 flaskapp.egg-info/requires.txt
 flaskapp.egg-info/top_level.txt
+flaskapp/static/style.css
 flaskapp/templates/index.html
-flaskapp/templates/style.css
+flaskapp/templates/results.html
