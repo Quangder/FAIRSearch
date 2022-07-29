@@ -24,12 +24,10 @@
                 <th>Copy</th>
             </tr>
             {% for r in pathstrings %}
-            {% x = 0 %}
             <tr>
-                <td id="{{ x }}">{{ r }}</td>
+                <td id="{{ loop.index }}">{{ r }}</td>
                 <td><button>COPY</button></td>
             </tr>
-            {% x += 1 %}
             {% endfor %}
 
         </table>

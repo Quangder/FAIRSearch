@@ -32,10 +32,6 @@ def create_app(test_config=None):
         for element in text_files:
             pathstrings.append(str(element).replace('/', '\\'))
 
-        ret = ""
-        for path in pathstrings:
-            ret = ret + '<a href="file:///' + path + '>'+ path + '</a><br>'
-
         return render_template('results.html', pathstrings=pathstrings)
 
     return app
